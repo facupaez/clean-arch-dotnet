@@ -9,6 +9,6 @@ namespace AppVenta.Dominio.Interfaces
     public interface IListar<TEntidad, TEntidadId>
     {
         List<TEntidad> Listar();
-        TEntidad SeleccionarPorId(TEntidad entidadId);
+        TEntidad SeleccionarPorId(TEntidadId entidadId);
     }
 }
