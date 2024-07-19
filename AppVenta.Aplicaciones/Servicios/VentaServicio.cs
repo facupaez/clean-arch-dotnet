@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AppVenta.Aplicaciones.Interfaces;
 using AppVenta.Dominio;
-using AppVenta.Dominio.Interfaces;
+using AppVenta.Dominio.Interfaces.Repositorios;
 
 namespace AppVenta.Aplicaciones.Servicios
 {

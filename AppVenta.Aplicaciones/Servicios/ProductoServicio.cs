@@ -1,13 +1,14 @@
 ﻿using AppVenta.Aplicaciones.Interfaces;
 using AppVenta.Dominio;
-using AppVenta.Dominio.Interfaces;
+using AppVenta.Dominio.Interfaces.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppVenta.Aplicaciones.Servicios {
+namespace AppVenta.Aplicaciones.Servicios
+{
     public class ProductoServicio : IServicioBase<Producto, Guid>
     {
 
