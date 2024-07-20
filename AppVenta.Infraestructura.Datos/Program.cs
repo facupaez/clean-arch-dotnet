@@ -1,9 +1,14 @@
 ﻿using System;
+using AppVenta.Infraestructura.Datos.Contextos;
 
 public class Program
 {
-    public static void Main()
+    static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Creando DB si no existe...");
+        VentaContexto db = new VentaContexto();
+        db.Database.EnsureCreated();
+        Console.WriteLine("DB creada!");
+        Console.ReadKey();
     }
 }

@@ -13,7 +13,7 @@ namespace AppVenta.Infraestructura.Datos.Configs
 
             builder.HasOne(detalle => detalle.Producto).WithMany(producto => producto.VentaDetalles);
 
-            builder.HasOne(detalle => detalle.Venta).WithMany(producto => producto.VentaDetalles);
+            builder.HasOne(detalle => detalle.Venta).WithMany(venta => venta.VentaDetalles);
         }
     }
 }

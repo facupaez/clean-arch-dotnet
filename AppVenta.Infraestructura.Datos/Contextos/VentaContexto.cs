@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 using AppVenta.Dominio;
 using AppVenta.Infraestructura.Datos.Configs;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace AppVenta.Infraestructura.Datos.Contextos
 {
-    public class VentaContexto : DbContext { 
-        
+    public class VentaContexto : DbContext {
+
+        string db_user = Environment.GetEnvironmentVariable("db_user");
+        string db_pw = Environment.GetEnvironmentVariable("db_pw");
+
         public DbSet<Producto> Productos { get; set; }
 
         public DbSet<Venta> Ventas { get; set; }
@@ -20,7 +24,9 @@ namespace AppVenta.Infraestructura.Datos.Contextos
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("Server=tcp:serverappventa.database.windows.net,1433;Initial Catalog=app-venta;Persist Security Info=False;User ID=adminappventa;Password=Channel321*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            //options.UseSqlServer("Server=tcp:serverappventa.database.windows.net,1433;Initial Catalog=app-venta;Persist Security Info=False;User ID=adminappventa;Password=Channel321*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            // connect to postgres with connection string from app settings
+            options.UseNpgsql("Host=localhost;Port=5432;Database=AppVenta;Username=" + db_user + ";Password=" + db_pw + ";");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
