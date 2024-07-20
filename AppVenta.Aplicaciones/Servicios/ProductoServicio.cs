@@ -12,9 +12,9 @@ namespace AppVenta.Aplicaciones.Servicios
     public class ProductoServicio : IServicioBase<Producto, Guid>
     {
 
-        private readonly IReposotorioBase<Producto, Guid> repoProducto;
+        private readonly IRepositorioBase<Producto, Guid> repoProducto;
 
-        public ProductoServicio(IReposotorioBase<Producto, Guid> _repoProducto)
+        public ProductoServicio(IRepositorioBase<Producto, Guid> _repoProducto)
         {
             repoProducto = _repoProducto;
         } 

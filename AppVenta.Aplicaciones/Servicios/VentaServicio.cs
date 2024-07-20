@@ -13,10 +13,10 @@ namespace AppVenta.Aplicaciones.Servicios
     {
 
         IRepositorioMovimiento<Venta, Guid> repoVenta;
-        IReposotorioBase<Producto, Guid> repoProducto;
+        IRepositorioBase<Producto, Guid> repoProducto;
         IRepositorioDetalle<VentaDetalle, Guid> repoDetalle;
 
-        public VentaServicio(IRepositorioMovimiento<Venta, Guid> _repoVenta, IReposotorioBase<Producto, Guid> _repoProducto, IRepositorioDetalle<VentaDetalle, Guid> _repoDetalle)
+        public VentaServicio(IRepositorioMovimiento<Venta, Guid> _repoVenta, IRepositorioBase<Producto, Guid> _repoProducto, IRepositorioDetalle<VentaDetalle, Guid> _repoDetalle)
         {
             repoVenta = _repoVenta;
             repoProducto = _repoProducto;
