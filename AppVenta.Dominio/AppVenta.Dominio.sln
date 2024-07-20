@@ -5,9 +5,11 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppVenta.Dominio", "AppVenta.Dominio.csproj", "{49DBC4C5-A68A-4A6F-B2BB-A4C2FB689FF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVenta.Aplicaciones", "..\AppVenta.Aplicaciones\AppVenta.Aplicaciones.csproj", "{D600E3E9-8B2D-4096-9A85-CCA936F1CF5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppVenta.Aplicaciones", "..\AppVenta.Aplicaciones\AppVenta.Aplicaciones.csproj", "{D600E3E9-8B2D-4096-9A85-CCA936F1CF5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVenta.Infraestructura.Datos", "..\AppVenta.Infraestructura.Datos\AppVenta.Infraestructura.Datos.csproj", "{BFF376E5-9E64-4059-BC3E-06CBF1C59D20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppVenta.Infraestructura.Datos", "..\AppVenta.Infraestructura.Datos\AppVenta.Infraestructura.Datos.csproj", "{BFF376E5-9E64-4059-BC3E-06CBF1C59D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVenta.Infraestructura.API", "..\AppVenta.Infraestructura.API\AppVenta.Infraestructura.API.csproj", "{C0A88CD8-237A-4370-8304-0D32F669DA54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{BFF376E5-9E64-4059-BC3E-06CBF1C59D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFF376E5-9E64-4059-BC3E-06CBF1C59D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFF376E5-9E64-4059-BC3E-06CBF1C59D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A88CD8-237A-4370-8304-0D32F669DA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A88CD8-237A-4370-8304-0D32F669DA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A88CD8-237A-4370-8304-0D32F669DA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A88CD8-237A-4370-8304-0D32F669DA54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
